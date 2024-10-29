@@ -31,5 +31,5 @@ Antes de executar o projeto, certifique-se de que você tem os seguintes softwar
 1. Clone o repositório:
 
    ```bash
-   git clone https://github.com/seuusuario/gerenciamento-processos.git
+   git clone [https://github.com/seuusuario/gerenciamento-processos.git](https://github.com/ItaloFrancaDev/gerenciamento-processos)
    cd gerenciamento-processos
