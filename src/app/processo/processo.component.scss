@@ -1,0 +1,154 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  /* Alterado para flex */
+  flex-direction: row;
+  /* Colocar elementos lado a lado */
+  gap: 40px;
+  padding: 40px;
+  max-width: 1165px;
+  /* Aumentar a largura máxima para melhor espaço */
+  width: 100%;
+}
+
+.form-container,
+.list-container {
+  background: linear-gradient(135deg, #ffffff, #f8f9fa);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 473px;
+  /* Ajuste na largura máxima para melhor layout lado a lado */
+  transition: box-shadow 0.3s ease;
+}
+
+.form-container:hover,
+.list-container:hover {
+  box-shadow: 0 12px 50px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 26px;
+  color: #343a40;
+}
+
+h3 {
+  margin: 20px 0 10px;
+  color: #495057;
+  font-weight: bold;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #495057;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus {
+  border-color: #28a745;
+  outline: none;
+}
+
+button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-right: 10px;
+  /* Espaçamento entre botões */
+}
+
+/* Botão padrão de Adicionar */
+button[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Botão verde para Adicionar Parte */
+button.adicionar-parte {
+  background-color: #28a745;
+  color: #fff;
+}
+
+button.adicionar-parte:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+/* Botão amarelo para Editar */
+button.editar {
+  background-color: #ffc107;
+  color: #343a40;
+}
+
+button.editar:hover {
+  background-color: #e0a800;
+  transform: translateY(-2px);
+}
+
+/* Botão vermelho para Remover */
+button.remover {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+button.remover:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.error {
+  color: #dc3545;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 13px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para centralizar os botões no formulário */
+.button-group {
+  display: flex;
+  gap: 15px;
+  /* Espaçamento uniforme entre os botões */
+  justify-content: center;
+  margin-top: 20px;
+}
+
